@@ -88,13 +88,15 @@ const Home = () => (
           all things launching products, from planning and designing all the way
           to solving real-life problems with code.
         </Paragraph>
-        {/* <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
-            </Button>
-          </NextLink>
-        </Box> */}
+      </Section>
+
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Education
+        </Heading>
+        <Paragraph>
+          Posts and Telecommunications Institute of Technology (PTIT)
+        </Paragraph>
       </Section>
 
       <Section delay={0.2}>
