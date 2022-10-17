@@ -33,7 +33,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            Takuya Matsuyama
+            DamHaiHiep
           </Text>
         </LogoBox>
       </a>

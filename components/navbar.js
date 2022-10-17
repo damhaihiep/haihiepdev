@@ -4,7 +4,7 @@ import {
   Container,
   Box,
   Link,
-  Stack,
+  // Stack,
   Heading,
   Flex,
   Menu,
@@ -16,28 +16,28 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+// import { IoLogoGithub } from 'react-icons/io5'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-  return (
-    <NextLink href={href} passHref scroll={false}>
-      <Link
-        p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-        target={target}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
-  )
-}
+// const LinkItem = ({ href, path, target, children, ...props }) => {
+//   const active = path === href
+//   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+//   return (
+//     <NextLink href={href} passHref scroll={false}>
+//       <Link
+//         p={2}
+//         bg={active ? 'grassTeal' : undefined}
+//         color={active ? '#202023' : inactiveColor}
+//         target={target}
+//         {...props}
+//       >
+//         {children}
+//       </Link>
+//     </NextLink>
+//   )
+// }
 
 const Navbar = props => {
-  const { path } = props
+  // const { path } = props
 
   return (
     <Box
@@ -63,7 +63,7 @@ const Navbar = props => {
           </Heading>
         </Flex>
 
-        <Stack
+        {/* <Stack
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full', md: 'auto' }}
@@ -92,7 +92,7 @@ const Navbar = props => {
             <IoLogoGithub />
             Source
           </LinkItem>
-        </Stack>
+        </Stack> */}
 
         <Box flex={1} align="right">
           <ThemeToggleButton />
