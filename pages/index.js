@@ -8,8 +8,8 @@ import {
   Button,
   List,
   ListItem,
-  useColorModeValue
-  // chakra
+  useColorModeValue,
+  chakra
 } from '@chakra-ui/react'
 // import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -17,14 +17,18 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 // import { GridItem } from '../components/grid-item'
-// import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import {
+  IoPhonePortraitOutline,
+  IoLogoFacebook,
+  IoMailOutline
+} from 'react-icons/io5'
 // import thumbYouTube from '../public/images/links/youtube.png'
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-// import Image from 'next/image'
+import Image from 'next/image'
 
-// const ProfileImage = chakra(Image, {
-//   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-// })
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
 
 const Home = () => (
   <Layout>
@@ -63,13 +67,13 @@ const Home = () => (
             borderRadius="full"
             overflow="hidden"
           >
-            {/* <ProfileImage
-              src="/images/takuya.jpg"
+            <ProfileImage
+              src="/images/av.jpg"
               alt="Profile image"
               borderRadius="full"
               width="100%"
               height="100%"
-            /> */}
+            />
           </Box>
         </Box>
       </Box>
@@ -125,19 +129,34 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
-              <Button variant="ghost" colorScheme="teal">
-                Facebook
+            <Link
+              href="https://www.facebook.com/damhaihiep1996"
+              target="_blank"
+            >
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoFacebook />}
+              >
+                facebook
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Button variant="ghost" colorScheme="teal">
+            <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<IoMailOutline />}
+            >
               damhaihiep1996@gmail.com
             </Button>
           </ListItem>
           <ListItem>
-            <Button variant="ghost" colorScheme="teal">
+            <Button
+              variant="ghost"
+              colorScheme="teal"
+              leftIcon={<IoPhonePortraitOutline />}
+            >
               0385019943
             </Button>
           </ListItem>
