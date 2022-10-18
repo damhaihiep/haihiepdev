@@ -49,7 +49,10 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             DamHaiHiep
           </Heading>
-          {/* <p>Digital Craftsman ( Artist / Developer / Designer )</p> */}
+          <i>
+            &#783; Every master was once a beginner.
+            <br /> Every pro was once an amateur. &#779;
+          </i>
         </Box>
         <Box
           flexShrink={0}
